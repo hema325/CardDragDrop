@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr: #47a1eb;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cards {
+    width: 420px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards .card {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #aaa;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.cards .card.draggingHovered {
+    border-style: dashed;
+}
